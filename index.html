@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Valentine's Day ❤️</title>
+<title>Happy Valentine's Day ANJUUUU ❤️</title>
 
 <style>
     body {
@@ -19,20 +19,36 @@
     }
 
     .card {
-        width: 360px;
-        height: 600px;
+        width: 380px;
         background: white;
         border-radius: 25px;
         box-shadow: 0 25px 50px rgba(0,0,0,0.3);
         text-align: center;
-        padding: 25px;
+        padding: 30px;
         position: relative;
         animation: fadeIn 2s ease-in-out;
     }
 
     h1 {
         color: #ff4e50;
-        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 26px;
+    }
+
+    .glow-name {
+        font-size: 28px;
+        font-weight: bold;
+        color: #ff1e56;
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #ff1e56, 0 0 20px #ff758c;
+        }
+        to {
+            text-shadow: 0 0 20px #ff1e56, 0 0 35px #ff4e50;
+        }
     }
 
     .photo {
@@ -40,22 +56,15 @@
         height: 180px;
         object-fit: cover;
         border-radius: 50%;
-        margin-top: 15px;
+        margin-top: 20px;
         border: 5px solid #ff4e50;
         box-shadow: 0 15px 30px rgba(0,0,0,0.3);
     }
 
-    .name {
-        margin-top: 15px;
-        color: #ff4e50;
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    p {
-        color: #444;
-        font-size: 17px;
+    .message {
         margin-top: 20px;
+        font-size: 17px;
+        color: #444;
         line-height: 1.6;
     }
 
@@ -73,6 +82,7 @@
 
     button:hover {
         background: #e63e42;
+        transform: scale(1.05);
     }
 
     @keyframes fadeIn {
@@ -80,7 +90,6 @@
         to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Floating hearts */
     .floating-heart {
         position: absolute;
         font-size: 20px;
@@ -103,27 +112,25 @@
 <body>
 
 <div class="card">
-    <h1>Happy Valentine's Day ❤️</h1>
+    <h1>Happy Valentine's Day</h1>
+    <div class="glow-name">ANJUUUU ❤️</div>
 
-    <!-- Replace photo.jpg with your actual image name -->
-    <img src="photo.jpg" alt="Her Beautiful Smile" class="photo">
+    <!-- Make sure image name matches exactly -->
+    <img src="photo.JPG" alt="Her Beautiful Smile" class="photo">
 
-    <!-- Replace Her Name -->
-    <div class="name">For My Love 💖</div>
-
-    <p>
+    <div class="message">
         Every day with you feels like a blessing.  
         You are my peace, my happiness, and my favorite person.  
         <br><br>
         Thank you for being you ❤️
-    </p>
+    </div>
 
     <button onclick="showLove()">Click for a Surprise</button>
 </div>
 
 <script>
     function showLove() {
-        alert("I love you more than words can say ❤️");
+        alert("ANJUUUU ❤️ You are my forever and always.");
     }
 
     function createHeart() {
